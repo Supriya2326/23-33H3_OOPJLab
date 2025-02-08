@@ -1,0 +1,60 @@
+public class Employee12 {
+
+private String name;
+
+private int age;
+
+private double salary;
+
+// Constructor
+
+public Employee12 (String name, int age, double salary) {
+
+this.name = name;
+
+this.age = age;
+
+this.salary = salary;
+
+}
+
+
+// Method to display employee12 details
+
+public void displayDetails() {
+
+System.out.println("Name: " + name);
+
+System.out.println("Age: " + age);
+
+System.out.println("Salary:" + salary);
+
+}
+
+// Method to calculate employee12 bonus 
+
+public double calculateBonus(Double bonusPercentage) {
+
+return salary * (bonusPercentage /100);
+
+}
+
+public static void main(String[] args) {
+
+// Create an Employee12 object
+
+Employee12 employee12 = new
+
+Employee12("John Doe", 30, 50000.0);
+
+// Invoke methods
+
+employee12.displayDetails();
+
+Double bonus = employee12.calculateBonus(10.0);
+
+System.out.println("Bonus: " + bonus);
+
+}
+
+}
